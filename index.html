@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaryan Manoj's DSA Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Background styling */
+        body {
+            background: linear-gradient(to right, rgba(34, 193, 195, 0.8), rgba(253, 187, 45, 0.8)), url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Header styling */
+        .header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Section card styling */
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Section titles */
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+
+        /* Link and social icon styles */
+        .resume-link, .platform-link {
+            color: #4a90e2;
+            font-weight: 500;
+            text-decoration: underline;
+            margin: 1rem 0;
+            display: inline-block;
+        }
+        .resume-link:hover, .platform-link:hover {
+            color: #357ABD;
+            text-decoration: none;
+        }
+        .social-icon:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Header Section -->
+    <header class="header fade-in" id="header">
+        <h1 class="text-4xl font-bold">Aaryan Manoj</h1>
+        <p class="text-lg mt-2">2nd Year CSE CORE Student at SRM Institute of Science and Technology</p>
+    </header>
+
+    <!-- Personal Details Section -->
+    <section class="card fade-in">
+        <h2 class="section-title">Personal Details</h2>
+        <p><strong>Email:</strong> am9527@srmist.edu.in</p>
+        <p><strong>Contact No:</strong> 9562849964</p>
+        <a href="https://drive.google.com/file/d/1QF7njqXjH60_zC1ItDFj2liAneTQi5mc/view?usp=drive_link" target="_blank" class="resume-link">Download Resume</a>
+        <div class="flex space-x-4 mt-4">
+            <a href="https://www.linkedin.com/in/aaryan-manoj-500b032b8/" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-8 h-8">
+            </a>
+            <a href="https://github.com/Aaryan-Manoj" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="w-8 h-8">
+            </a>
+        </div>
+    </section>
+
+    <!-- About DSA Section -->
+    <section class="card fade-in">
+        <h2 class="section-title">About DSA</h2>
+        <p>Currently, as a 2nd-year engineering student, I am diving into the fundamental concepts of Data Structures and Algorithms (DSA). This subject is essential in computer science as it provides a systematic approach to problem-solving and enables me to create efficient, optimized solutions.</p>
+        <h3 class="text-lg font-medium mt-4">Topics Covered</h3>
+        <ul class="list-disc ml-6 mb-4">
+            <li>Basic Data Structures (Arrays, Linked Lists, Stacks, Queues)</li>
+            <li>Searching and Sorting Algorithms</li>
+            <li>Advanced Data Structures (Trees, Graphs, Heaps)</li>
+            <li>Dynamic Programming and Greedy Algorithms</li>
+        </ul>
+        <h3 class="text-lg font-medium mt-4">Advantages of DSA</h3>
+        <p>DSA skills are foundational for careers in software engineering, data science, and AI, allowing for optimized and scalable software development. Understanding these concepts prepares me to tackle complex challenges and write efficient code, which is highly valued in the industry.</p>
+    </section>
+
+    <!-- Practice Platforms Section -->
+    <section class="card fade-in">
+        <h2 class="section-title">Practice Platforms</h2>
+        <p>To strengthen my DSA knowledge, I regularly practice coding problems on competitive programming platforms like CodeChef and HackerRank. These platforms provide a wide range of problems that help in honing my problem-solving skills.</p>
+        
+        <div class="mt-4">
+            <a href="https://www.codechef.com/users/aaryan_manoj" target="_blank" class="platform-link">CodeChef Profile</a>
+            <p class="text-gray-700">CodeChef helps me practice under competitive scenarios with regular contests, sharpening my speed and accuracy in solving complex DSA problems.</p>
+        </div>
+
+        <div class="mt-4">
+            <a href="https://www.hackerrank.com/profile/am9527" target="_blank" class="platform-link">HackerRank Profile</a>
+            <p class="text-gray-700">HackerRank offers diverse coding challenges that strengthen my understanding of data structures, algorithms, and programming concepts. The platform helps me build essential problem-solving skills and prepares me for technical interviews through hands-on practice. Its wide variety of questions also allows me to track my progress and continuously improve.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Aaryan Manoj. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for fade-in animation
+        function handleScroll() {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            fadeInElements.forEach((el) => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', handleScroll);
+        window.addEventListener('scroll', handleScroll);
+    </script>
+
+</body>
+</html>
